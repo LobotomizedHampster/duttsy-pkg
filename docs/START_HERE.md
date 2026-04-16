@@ -47,4 +47,58 @@ And lets say you want to track only the files/folders listed below:
 ### How To
 
 #### Step 1: Create the dotfile directory
+This the `~/.dotfile` directory is where all of the files that you want to track will be.
+To add:
+```bash
+mkdir ~/.dotfiles
+```
 
+#### Step 2: Track your first file
+To start tracking a file, copy it to the dotifles directory. In this example, we will move the .xinitrc file.
+```bash
+cp ~/.xinitrc ~/.dotfiles/.xinitrc
+```
+
+Now the home directory structure looks like this:
+```
+├── .config/
+│   ├── kitty/
+│   │   ├── colorscheme.conf
+│   │   └── kitty.conf
+│   ├── nvim/
+│   │   ├── init.lua
+│   │   └── lazy.lock.json
+│   └── vlc/
+│       ├── vlc-qt-inerface.conf
+│       └── vlcrc
+├── .dotfiles/   
+│   └── .xinitrc   <--- copied file
+└── .xinitrc   <--- notice that .xinitrc is still in the home dir
+```
+Note: `.xinitrc` _can_ be removed from the home directory, but its not necessary. The program will take care of this automatically
+
+Now, run the program:
+```bash
+duttsy
+```
+
+
+If done correctly, the structure should now look like this:
+```
+/home/user/
+├── .config/
+│   ├── kitty/
+│   │   ├── colorscheme.conf
+│   │   └── kitty.conf
+│   ├── nvim/
+│   │   ├── init.lua
+│   │   └── lazy.lock.json
+│   └── vlc/
+│       ├── vlc-qt-inerface.conf
+│       └── vlcrc
+├── .dotfiles/
+│   └── .xinitrc
+└── .xinitrc -> .dotfiles/.xinitrc   <--- the "<-" means its symlinked to that file
+```
+
+As you can see, the `.xinitrc` file in home is now symlinked to the file in `.dotfiles/` everything should behave as it normally does, other than the fact that you can now edit the file in `.dotfiles/`
