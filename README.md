@@ -7,7 +7,7 @@ the repo for installing [duttsy](https://github.com/LobotomizedHampster/duttsy.g
 ```bash
 mkdir duttsy-install
 cd duttsy-install
-git clone (add name)
+git clone https://github.com/LobotomizedHampster/duttsy-pkg.git
 cd duttsy
 ```
 
@@ -26,7 +26,7 @@ rm -r duttsy-install
 ```bash
 mkdir duttsy-install
 cd duttsy-install
-git clone (add name)
+git clone https://github.com/LobotomizedHampster/duttsy-pkg.git
 cd duttsy
 makepkg -si
 #cd ../..
