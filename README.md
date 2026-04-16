@@ -1,6 +1,6 @@
 # Duttsy package install
 ## Overview
-the repo for installing [duttsy](https://github.com/LobotomizedHampster/duttsy.git)
+the repo for installing [duttsy](https://github.com/LobotomizedHampster/duttsy.git). Also contains the user documentation.
 
 ## Install steps
 ### 1. Clone this repo
