@@ -1,11 +1,15 @@
 # START GUIDE
+
+# ======= IMPORTANT ========
+So as you can tell from the amount of stars this has, this is not a very popular repo (and for good reason, my coding abilities are summed up by my username). And since its so unpopular, I haven't bothered writing the docs. So if you happen to come across this text, feel free to leave an issue, and, assuming I'm still using this account, I'll finish them. (though i will say, most if it is either already covered or self explanatory.).
+
 ## Before Continuing...
 ...understand what this program is and what it does (and, more importantly, what is does not do).
 
 ### What this Program Does
 - creates symlinks to files in the `~/.dotfiles/` directory 
 - structures the files as if in your home directory
-- allows for unlinking files through the --delete flag
+- allows for unlinking files through the --deltete flag
 - ignores files/folders specified in the `~/.dotfiles/.duttsy-ignore` file.
 - manages symlink conflicts through the `~/.dotfiles/.overwritten` folder
 
